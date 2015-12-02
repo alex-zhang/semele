@@ -1,0 +1,24 @@
+{
+  "name": "semele",
+  "version": "0.0.1",
+  "main": "semele.js",
+  "homepage": "https://github.com/alex-zhang/semele",
+  "description": "`semele.js` is Minimal AMD module manager.",
+  "authors": [
+    "gzane24@gmail.com"
+  ],
+  "keywords": [
+    "AMD",
+    "CMD",
+    "UMD",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

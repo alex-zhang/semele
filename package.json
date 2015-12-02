@@ -1,0 +1,24 @@
+{
+  "name": "semele",
+  "version": "0.0.1",
+  "description": "`semele.js` is Minimal AMD module manager.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AMD",
+    "CMD",
+    "UMD",
+    "js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-zhang/semele.git"
+  },
+  "author": "alex zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex-zhang/semele/issues"
+  },
+  "homepage": "https://github.com/alex-zhang/semele"
+}
