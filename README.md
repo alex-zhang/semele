@@ -26,4 +26,4 @@ console.log(moduleA.value);//3
 
 ## License
 
-semele.js is [MIT Licensed](https://github.com/ember-cli/loader.js/blob/master/LICENSE.md).
+semele.js is [MIT Licensed](https://github.com/alex-zhang/semele/blob/master/LICENSE.md).
