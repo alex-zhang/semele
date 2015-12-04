@@ -2,6 +2,7 @@ var define, require;
 
 (function(global) {
   var registry = {};
+  var modAlias = {};
   var uuid = 0;
 
   //const
@@ -111,6 +112,10 @@ var define, require;
 
   require = requireModule;
 
+  require.alias = function(name, aliasName) {
+    modAlias[name] = aliasName;
+  }
+
   //defineModule(name?, dependencies?, factory)
   //string, [], object.
   //string, object
@@ -159,7 +164,7 @@ var define, require;
   }
 
   function loadModule(name, importFrom) {
-    var mod = registry[name];
+    var mod = registry[name] || registry[modAlias[name]];
     if (!mod) {
       missingModuleError.apply(null, arguments);
     }
