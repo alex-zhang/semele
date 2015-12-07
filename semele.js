@@ -67,8 +67,9 @@ var define, require;
       } else if (dep === 'module') {
         depRefs[i] = this;
       } else if (dep === 'require') {
-        //here require is base the asb mod name, use module.require to base to cur mod.
-        depRefs[i] = requireModule;
+        depRefs[i] = function(name) {
+          return require(resolveModuleAbsPath(name, selfName));
+        }
       } else {
         depRefs[i] = this.require(dep);
       }
