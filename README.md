@@ -13,6 +13,7 @@ $ npm install --save-dev semele
 $ bower install --save semele
 ```
 
+## Usage
 ```js
 define('moduleA', function() {
   return {
@@ -23,6 +24,15 @@ define('moduleA', function() {
 var moduleA = require('moduleA');
 console.log(moduleA.value);//3
 ```
+
+```js
+define('moduleB', ['require', 'exports', 'module', 'moduleA'], function(require, exports, module, moduleA) {
+  var moduleA = require('moduleA');
+  exports.value  = moduleA.value;
+})
+```
+
+U can use [gulp-js-module-wrapper](https://github.com/alex-zhang/gulp-js-module-wrapper) to wrapper you js file.
 
 ## License
 
