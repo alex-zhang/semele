@@ -4,6 +4,9 @@ semele.js
 'semele.js' is Minimal AMD & CMD module manager. Unlike 'Requirejs', 'semele.js' is focus on 'module-conatiner' and it will not to resolve how to load these modules. 
 it just give a module-conatiner, in `AMD` way. It's can be used in prepacked modules.
 
+u can use [gulp-js-module-wrapper](https://github.com/alex-zhang/gulp-js-module-wrapper) to wrapper your
+js module.
+
 ## Install
 ```
 $ npm install --save-dev semele
